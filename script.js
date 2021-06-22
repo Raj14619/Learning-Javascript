@@ -289,3 +289,58 @@ if(height) {
 
 //Part 10  Equality operators == vs ===
 
+/*
+// The "===" operator is the strict equality operator. It's strict because it does not perform type coercion, so it only returns true when both values are exactly the same. 
+// The "==" operator is the loose equality operator. The loose equality operator does type coercion 
+const age = 18;
+
+if(age === 18) console.log("You just became an adult"); // when using === we do not need the curly brackets
+
+
+if('18' == 18){ // the string 18 will be converted to a number and then compared to the other number 18 resulting in true, so the if statement will be executed.
+    console.log("this if statement works")
+}
+
+if('18' === 18){ // this will be false since the triple equals does not perform type coercion, and therefore the line below will not be executed
+    console.log("This if statement will not be executed")
+}
+
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+
+
+if(favourite != 23){ // this is the loose not equal to
+
+}
+
+if(favourite !== 23){
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+//Part 11  Boolean logic | Logical operators
+
+/*
+const rajHasDriverLicence = true;
+const rajHasGoodVision = true;
+
+if(rajHasDriverLicence && rajHasGoodVision){
+    console.log("Raj can drive");
+} else{
+    console.log("Raj can not drive");
+}
+
+if(!rajHasDriverLicence){
+    console.log("Raj does not have a driving license");
+}
+*/
