@@ -1,3 +1,10 @@
+/*
+Below is code in javascript and comments which will help you understand javascript if you already know a programming language such as Java.
+This code was intended for myself to help remember and as a self reference.
+You may also find this helpful.
+The code posted below is from the complete javascript course on udemy, while the comments have been written by me.
+*/
+
 
     //PART 1 DECLARING VARIABLES
 /*
@@ -116,7 +123,7 @@ const isRajOlderThanJonas = ageRaj > ageJonas; // Declaring a variable "isRajOld
 
 
 //PART 5 - Strings and template Literals
-
+/*
 const firstName = 'Raj'
 const job = 'student';
 const birthYear = 1997;
@@ -142,4 +149,56 @@ lines");
 console.log(`String with
 multiple
 lines`)
+*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PART 6 - IF STATEMENTS AND ELSE STATEMENTS
+
+/*
+const rajAge = 23;
+const isRajOldEnoughToDrink = rajAge >= 18; // here we are declaring a boolean which wil be true if age is equal to or greater than 18, in this case it will be true.
+const jonasAge = 16;
+const isJonasOldEnoughToDrink = jonasAge >= 18;
+
+if(isRajOldEnoughToDrink){
+    console.log(`Raj is old enough to drink 😂`);
+} else {
+    const yearsLeft = 18 - rajAge;
+    console.log(``)
+}
+
+if(isJonasOldEnoughToDrink){
+    console.log(`Jonas is old enough to drink 😂`);
+} else {
+    const yearsLeft = 18 - jonasAge;
+    console.log(`Jonas is not old enough to drink, wait ${18-jonasAge} years`)
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+// PART 7 - CONVERTING DATA TYPES
+var inputYear = "1991"; // declaring inputYear as a string
+console.log(inputYear); // when looking at this output in console it will show a black colour because it's a string 
+var inputYear = Number(inputYear); // converting inputYear from String to Number
+console.log(inputYear); // when looking at this output in console it will show a blue colour because it's a numbers
