@@ -197,8 +197,95 @@ if(isJonasOldEnoughToDrink){
 
 
 
-// PART 7 - CONVERTING DATA TYPES
+// PART 7 - CONVERTING DATA TYPES | Converting Strings, Converting Numbers, Converting Booleans
 var inputYear = "1991"; // declaring inputYear as a string
 console.log(inputYear); // when looking at this output in console it will show a black colour because it's a string 
 var inputYear = Number(inputYear); // converting inputYear from String to Number
 console.log(inputYear); // when looking at this output in console it will show a blue colour because it's a numbers
+
+console.log(Number('Raj')); // Here we are converting the string Raj into a number which isn't valid, which outputs NaN which stands for Not a number
+console.log(typeof NaN); // When checking the typeof NaN it's data type is a number, this is 'strange' and will lead to bugs when checking if a number is valid or not, so be careful Raj
+
+
+
+
+
+
+
+
+
+//Part 8 - TYPE COERCION | TYPE COERCION HAPPENS WHENEVER AN OPERATOR IS DEALING WITH TWO VALUES OF DIFFERENT TYPES, IN WHICH JS WILL CONVERT ONE OF THE DATA TYPES TO MATCH THE OTHER DATA TYPE.
+/*
+console.log('I am'+ 23 + ' years old') // here we have a string, a number, and a string which outputs a whole line of strings, this is done with type coercion. the + operator triggers a coercion to strings. So whenever there is an operator between a string and a number the number will be converted to a string.
+console.log('23' - '10' - 3) // here we have a string, another string and a number. This time Javascript converted the strings into numbers which is why we get the output as 10. 
+// So in the above two lines, using the + operator between numbers and strings convers the numbers data type into string and concatenates them while as using the "-" operator between strings and numbners will trigger a numeric minus calculations between the values
+
+console.log('23' + 10 + '3') // This will not add all the numbers up numerically, this will just concatenate the strings together.
+
+console.log('10' * '10')// this will output 100, the strings will be converted into numbers and then multiplied
+console.log('100' / '10') // this will output 10, the strings will be converted into numbers and then divided.
+
+console.log('23' > '18') // the strings will be converted into numbers and then true will be the output
+
+
+var n = '1' + 1; // this will output "11" which is a string
+n = n - 1; // this will output 10 as a number since n will be converted into a number (which is 11) and minused by 1.
+console.log(n); // the output will be 10
+
+console.log(2+3+4+'5'); // this will output 95, since 2+3+4 = 9 and then 9 will be converted into a string and be concatenatted with '5' which is another string, resulting in 95.
+console.log('10'-'4'-'3'-2+'5'); // this will output 15
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+//Part 9 Truthy and Falsy values
+
+/*
+//Falsy values are values which are not exactly false, but will become false if we try to convert them into a boolean. The 5 falsey values in JS are: 0, an empty string, undefined, null and NaN
+//Anything which isn't a falsy value (which you listed above) are truthy values. truthy values will be converted to true when converting them to a boolean
+
+console.log(Boolean(0)) // this will be false
+console.log(undefined) // this is undefined
+console.log(Boolean('Jonas')) // true  
+console.log(Boolean({}));// this is an empty object, which will also be true
+console.log(Boolean('')); // empty string will be false
+
+
+const money = 0; 
+
+if(money){ // if money is any number other than 0, the below if statement line will be executed
+    console.log("Don't spend it all");
+} else{ // if money is 0 the else statement will be executed since 0 will be false when converted into a boolean
+    console.log("You should get a job");
+}
+
+
+let height;
+
+if(height) {
+    console.log("Height is defined");
+} else{
+    console.log("Height is undefined"); // this statement will be executed because height has not been defined, since height has been declared, but no value has been set for it.
+}
+*/
+
+
+
+
+
+
+
+
+
+
+//Part 10  Equality operators == vs ===
+
