@@ -79,6 +79,7 @@ lastName = "Schmdetmann" // This is another way to declare a variable, but is ba
 
 //PART 4 - concatination of strings, Learning operators, and Incrementing variables in javascript
 
+/*
 const currentYear = 2037;
 const ageRaj = currentYear - 1991; // ageRaj = 2037 - 1991
 const ageJonas = currentYear - 2018; // ageJonas = 2037 - 2018
@@ -102,3 +103,43 @@ console.log(x);
 console.log(ageRaj > ageJonas) // Raj is older than Jonas so output should be true. Same like java when it comes to (>, <, >= and <=)
 
 const isRajOlderThanJonas = ageRaj > ageJonas; // Declaring a variable "isRajOlderThanJonas" as Boolean, and will be true if Raj's age is greater than Jonas's age. This will be true.
+*/
+
+
+
+
+
+
+
+
+
+
+
+//PART 5 - Strings and template Literals
+
+const firstName = 'Raj'
+const job = 'student';
+const birthYear = 1997;
+const year = 2020;
+
+const test = 'i am' // when declaring string using '' you are unable to use a ' in the string itself, so you have to use "" (See below line)
+const jonas = "I'm" // we are able to declare "I'm" but in the above line we are unable to declare I'm as we are using ''
+
+const text = "I'm " + firstName + ' a ' + (year - birthYear) + ' years old ' + job + '!'; 
+console.log(text); 
+
+//In javascript we now have template literals which makes concatinating strings easier (see below lines). NOTE RAJ: WE ARE USING ` WHICH IS THE KEY NEXT TO 1 ON THE KEYBOARD
+
+const newText = `I'm ${firstName}, a ${year-birthYear} year old + ${job}!`;
+console.log(newText)
+
+// The below three lines is an old school way of writing string in multiple lines which existed only because of a bug in javascript
+console.log("String with \n\
+multiple \n\
+lines");
+
+//Below is the latest and better way of writing strings in multiple lines in javascript. BELOW WE ARE USING LITERALS. THE KEY NEXT TO THE NUMBER 1 ON THE KEYBOARD IS BEIGN USED.
+console.log(`String with
+multiple
+lines`)
+
